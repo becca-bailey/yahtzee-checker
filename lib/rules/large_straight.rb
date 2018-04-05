@@ -8,7 +8,7 @@ module YahtzeeChecker
       def call
         sorted = dice.sort
         if sorted.each_cons(2).all? {|a, b| b == a + 1 }
-          ["Large Straight", 40]
+          40
         else
           fail!
         end

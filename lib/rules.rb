@@ -8,10 +8,10 @@ module YahtzeeChecker
       def check(*dice)
         scores = []
         @rules.each do |rule|
-          result = rule.call(dice: dice)
+          result = rule[:class].call(dice: dice)
           next if result.failed? 
-          name, score = result.value
-          scores << { name: name, score: score }
+          score = result.value
+          scores << { name: rule[:name], score: score }
         end
         scores.sort_by { |s| -s[:score] }
       end

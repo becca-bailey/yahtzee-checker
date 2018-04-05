@@ -10,7 +10,7 @@ module YahtzeeChecker
 
         groups.each do |key, value|
           if value.length >= 4
-            return ["Four of a Kind", dice.reduce(:+)]
+            return dice.reduce(:+)
           end
         end
         fail!

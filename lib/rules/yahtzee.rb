@@ -7,7 +7,7 @@ module YahtzeeChecker
 
       def call
         fail! if dice.uniq.length != 1
-        ["Yahtzee", 50]
+        50
       end
     end
   end

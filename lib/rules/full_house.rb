@@ -18,7 +18,7 @@ module YahtzeeChecker
           end
         end
 
-        ["Full House", 25]
+        25
       end
     end
   end

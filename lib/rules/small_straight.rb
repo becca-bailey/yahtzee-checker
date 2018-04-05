@@ -14,7 +14,7 @@ module YahtzeeChecker
           end
         end
         fail! if straight.length < 3
-        ["Small Straight", 30]
+        30
       end
     end
   end

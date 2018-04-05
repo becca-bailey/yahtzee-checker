@@ -1,3 +1,5 @@
+require 'verbalize/action'
+
 module YahtzeeChecker
   module Rules
     class Chance
@@ -6,7 +8,7 @@ module YahtzeeChecker
       input :dice
 
       def call
-        ["Chance", dice.reduce(:+)]
+        dice.reduce(:+)
       end
     end
   end
