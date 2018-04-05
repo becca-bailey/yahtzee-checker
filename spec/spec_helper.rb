@@ -1,0 +1,10 @@
+require 'verbalize'
+
+require 'rules'
+require 'rules/chance'
+require 'rules/four_of_a_kind'
+require 'rules/full_house'
+require 'rules/large_straight'
+require 'rules/small_straight'
+require 'rules/three_of_a_kind'
+require 'rules/yahtzee'
