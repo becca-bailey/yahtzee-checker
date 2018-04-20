@@ -1,4 +1,4 @@
-module YahtzeeChecker
+module Yahtzee
   module Rules
     class FourOfAKind
       include Verbalize::Action

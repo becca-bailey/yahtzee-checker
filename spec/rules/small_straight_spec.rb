@@ -1,6 +1,6 @@
 require_relative '../spec_helper'
 
-describe YahtzeeChecker::Rules::SmallStraight do
+describe Yahtzee::Rules::SmallStraight do
   context 'when it is successful' do
     it 'returns 30 points' do
       score = described_class.call!(dice: [1, 2, 3, 4, 6])

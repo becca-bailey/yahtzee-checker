@@ -1,6 +1,6 @@
 require 'verbalize/action'
 
-module YahtzeeChecker
+module Yahtzee
   module Rules
     class Chance
       include Verbalize::Action

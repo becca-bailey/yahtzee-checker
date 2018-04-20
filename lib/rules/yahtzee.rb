@@ -1,4 +1,4 @@
-module YahtzeeChecker
+module Yahtzee
   module Rules
     class Yahtzee
       include Verbalize::Action

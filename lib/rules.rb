@@ -1,4 +1,4 @@
-module YahtzeeChecker
+module Yahtzee
   module Rules
     class << self
       def register(*rules)

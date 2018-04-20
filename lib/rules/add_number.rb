@@ -1,6 +1,6 @@
 require 'verbalize/action'
 
-module YahtzeeChecker
+module Yahtzee
   module Rules
     class AddNumber
       include Verbalize::Action
@@ -13,18 +13,14 @@ module YahtzeeChecker
         selected.reduce(:+)
       end
     end
-  end
-end
 
-module YahtzeeChecker
-  module Rules
     class Ones
       include Verbalize::Action
 
       input :dice
       
       def call
-        YahtzeeChecker::Rules::AddNumber.call!(dice: dice, number: 1)
+        AddNumber.call!(dice: dice, number: 1)
       end
     end
   end

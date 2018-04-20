@@ -1,4 +1,4 @@
-module YahtzeeChecker
+module Yahtzee
   module Rules
     class SmallStraight
       include Verbalize::Action

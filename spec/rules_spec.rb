@@ -1,12 +1,12 @@
 require 'spec_helper'
 
-describe YahtzeeChecker::Rules do
+describe Yahtzee::Rules do
   before do
     described_class.register(
-      { name: "Full House", class: YahtzeeChecker::Rules::FullHouse },
-      { name: "Chance", class: YahtzeeChecker::Rules::Chance },
-      { name: "Yahtzee", class: YahtzeeChecker::Rules::Yahtzee },
-      { name: "Ones", class: YahtzeeChecker::Rules::Ones },
+      { name: "Full House", class: Yahtzee::Rules::FullHouse },
+      { name: "Chance", class: Yahtzee::Rules::Chance },
+      { name: "Yahtzee", class: Yahtzee::Rules::Yahtzee },
+      { name: "Ones", class: Yahtzee::Rules::Ones },
     )
   end
 
