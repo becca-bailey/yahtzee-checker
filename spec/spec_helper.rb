@@ -1,6 +1,7 @@
 require 'verbalize'
 
 require 'rules'
+require 'rules/add_number'
 require 'rules/chance'
 require 'rules/four_of_a_kind'
 require 'rules/full_house'
